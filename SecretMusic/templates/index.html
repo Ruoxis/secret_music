@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>ssss sssss
+    {{ name }}
+    {% for item in list_data %}{# for // 循环 #}
+        <li>{{ item }}--{{ forloop.counter }}--{{ forloop.counter0 }}</li>
+        {#            <li>{{ item }}+{{ forloop.revcounter }}+{{ forloop.revcounter0 }}<li>#}
+        {% if forloop.first %}
+            list go
+        {% elif forloop.last %}
+            give over
+
+        {% endif %} {# {% endif % }// if判断结尾#}
+    {% empty %}
+        {# {% empty %} //空值判断 #}
+        当前为空值输出
+
+    {% endfor %}{# for 循环结束 #}
+</p>>
+<img src="{% static '/images/aaa.png'%}">
+</body>
+</html>
