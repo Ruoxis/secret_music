@@ -8,6 +8,8 @@ from .models import Role, Permission, UserRole, RolePermission
 
 
 # Create your views here.
+
+
 def user_list(request):
     """用户列表视图，用于显示所有用户。"""
     users = User.objects.all()
@@ -46,7 +48,6 @@ def assign_permission(request):
 
 
 def message(request):
-
     return HttpResponse("AAAAAA")
 
 
